@@ -139,8 +139,11 @@ hilight stylesheet
  .list{
      display: flex;
      justify-content: center;
-     text-decoration: none;
+     
      color: #969BAB;
+ }
+ li{
+     text-decoration: none;
  }
  h3{
      text-align: center;
@@ -149,22 +152,66 @@ hilight stylesheet
  }
 
  /* Responsive for mobile */
- @media only screen and (max-width:688) {
+ @media only screen and (max-width: 688px) {
 
-    .head{
-        width: 100%;
+    header {
         height: 700px;
-        display: flex;
-        flex-direction: column;
+        background-color: #2D25A0;
+    }
+    .half h1 {
+        color: white;
+        width: 485px;
+        height: 230px;
+        font-size: 41px;
+        margin-bottom: 0px;
     }
     .banner-image{
         width: 330px;
-        height: 260;
+        height: 260px;
     }
-    
-    
+    .control-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .half {
+        margin-bottom: 10%;
+    }
 
-    .blog {
-        display: none;
+
+    /* Hero Secton */
+    
+    .container-hero {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 11%;
     }
+    .hero-1 {
+        width: 304px;
+        border-radius: 5px;
+        margin-bottom: 5%;
+    }
+    
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 20%;
+    }
+
+    /* heilight section */
+    .blog {
+        margin-top: 3%;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+        align-items: center;
+    }
+   
  }
